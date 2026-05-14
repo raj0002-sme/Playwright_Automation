@@ -1,0 +1,25 @@
+{
+  "name": "playwriteautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "smoke": "npx playwright test --grep \"@smoke\"",
+    "safariNewConfig": "npx playwright test --config playwright.config1.js --project=chrome",
+    "runWithAllureReport": "npx playwright test --grep \"smoke\" --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.2",
+    "allure-playwright": "^3.4.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.5.0",
+    "exceljs": "^4.4.0"
+  }
+}
