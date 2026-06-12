@@ -44,6 +44,7 @@ class LoginPage{
         this.page = page;
         this.username = page.locator("<Locar>");
         this.password = page.locator("<locator>");
+        
 
     }
 }
